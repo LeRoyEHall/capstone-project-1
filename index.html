@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+</head>
+<body>
+    <h1>LeRoy Hall</h1>
+    <img src="./assets/images/LeRoyHall.JPG" height="200"/>
+    <h2>Summary</h2>
+    Over 10 years experience developing Java web services on-prem and in the cloud. Experienced leading remote teams of developers in an agile development environment. Demonstrated competence in learning and applying new technologies to achieve business goals.
+    <hr>
+    <h2>Skills</h2>
+    <table>
+        <tr>
+            <td>Java Technologies</td>
+            <td>Spring (Security, Boot, Data, Batch), Maven, Hibernate, JPA, JDBC</td>
+        </tr>
+        <tr>
+            <td>Cloud Technologies</td>
+            <td>AWS (Lambda (Java, Javascript, Python), ECR, ECS, API Gateway, S3, Redis ElastiCache, Parameter Store, SQS, RDS, Cloudwatch, IAM), Openshift, Azure</td>
+        </tr>
+        <tr>
+            <td>Database</td>
+            <td>PostgreSQL, SQL Server, MySQL, Oracle</td>
+        </tr>
+        <tr>
+            <td>Build Tools</td>
+            <td>Jenkins, GitLab, Terraform, Terragrunt</td>
+        </tr>
+        <tr>
+            <td>IDEs</td>
+            <td>IntelliJ, PyCharm, Eclipse, VSCode</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Work Experience</h2>
+    <ul>
+        <li>
+            <h3>Software Engineer Advanced - Federal Reserve Bank Of Kansas City</h3>
+            Kansas City, Mo : July 2017 - Present
+            <p>
+                <ul>
+                    <li>Designed and developed an on-prem Spring Batch application running on the Openshift Container Platform (OCP) to pull user information from an enterprise service and store it in a PostgreSQL DB.</li>
+                    <li>Designed and developed an on-prem Sping Boot application running on the OCP platform to manage user information, an integrate user information with okta for the Supervision Central application.</li>
+                    <li>Designed and developed an onprem Spring Boot email service and PostgreSQL DB. Migrated this application to AWS and RDS PostgreSQL, deploying from GitLab, using Terraform and Terragrunt, to AWS ECR/ECS. Upgraded the email service to use a new enterprise email service running on Azure.</li>
+                    <li>Led effort to prove out Cloudwatch Synthetic Canaries as a monitoring and alerting tool for various applications and services running in AWS. Later, implemented several Synthetic Canaries and promoted into a production environment.</li>
+                    <li>Developed an AWS API Gateway solution that allowed on-prem services to access AWS resources.</li>
+                    <li>Architected, designed, and developed a write-through cache solution to keep fresh the AWS Redis ElastiCache for user data, thus significantly reducing back-end on-prem service calls and improving the responsiveness of the Supervision Central Application. Utilized API Gateway, SNS, SQS, and Lambdas to send data updates from our on-prem services to the AWS cache.</li>
+                    <li>Served as the team's AWS IAM Administrator, ensuring that our various applications/components only had the roles and policies they needed to perform their functions.</li>
+                    <li>Served as the team's okta administrator, mananaging user profiles, and application configurations.</li>
+                    <li>Served as the team's security champion, attending weekly security meetings with the Enterprise Security Architects and communicated back to the team any security-related work that needed to be prioritized. Monitored SAST/DAST/SCA scan results, ensuring that work to resolve security vulnerabilites as planned and prioritized. Worked closely with the Site Reliability Engineer to ensure the integrity of our applications.</li>
+                    <li>Developed a AWS ECS Spring Boot service to migrate all versions of the given document from box.com to SharePoint as part of a larger team effort to move all document storage to SharePoint.</li>
+                    <li>Developed an on-prem Spring Boot CRON job application to aggregrate data from multiple SQL Server databases into a new SQL Server database.  Exposed a endpoint to allow the front end application access to the data.</li>
+                    <li>Updated Python based Lambda APIs to expose new RDS MySQL views for various reporting systems.</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <h3>Senior Software Development Engineer - Travelport</h3>
+            Kansas City, Mo : January 2012 - 2017
+            <p>
+                <ul>
+                    <li>Refactor existing Spring Boot Java Web Services to Travelport's Greenfield environment for deployment to new cloud infrastructure running on Cloud Foundry
+                    <li>Learn and integrating Travelport's proprietary REST framework into an existing domain service that utilizes Akka actors to aggregate the results of multiple atomic service calls</li>
+                    <li>Integrate Zookeeper as a service manager, eliminating the need for F5 load balancing, resulting in faster deployment and flexible horizontal scaling of services</li>
+                    <li>Developed a Jenkins pipeline to automate the deployment process using groovy scripts to run Sonar scans, Fortify security scans, maven build, package and Stackato deployment to Cloud Foundry</li>
+                    <li>Led offshore team of developers ensuring that code standards are followed while integrating Travelport's REST framework and transitioning atomic services into Cloud Foundry</li>
+                    <li>Work closely with the project manager and team leads to refine stories and conduct sprint planning exercises to ensure that requirements and acceptance criteria are clear and concise</li>
+                    <li>Design and develop RESTful Microservices to connect to a car broker in Ireland to increase Travelport's car content offerings in the European and South American markets</li>
+                    <li>Utilized Spring Boot, Spring 4, Java 8, Tomcat 7, Docker, Jenkins, AppDynamics monitoring, JMX, JSON and XML, Jira, and GIT</li>
+                    <li>Manage the product development life cycle, ensuring that all documentation is done and proper procedures are followed according to methodology (Waterfall, Kanban, Scrum)</li>
+                    <li>Work closely with performance and architecture engineers to ensure that our applications exceed service level agreements</li>
+                    <li>Coordinate production deployments, ensuring that the correct procedures are followed, proper documentation completed, and customers are not impacted</li>
+                    <li>Support my team by helping to remove impediments, mentoring new developers, conducting code walk throughs, Sprint planning, and daily scrum meetings</li>
+                    <li>Work with project manager to assign resources, give high level estimates for projects, give status reports to the product line team, and conduct interviews with potential candidates for open positions on our team</li>
+                    <li>Design and develop RESTful services on Azure (SaaS) to connect to various car providers and retrieve location policy information in an effort to provide higher quality data to Travelport customers</li>    
+                    <li>Designed and developed an enterprise service bus application to connect with Travelport Rooms and More to increase hotel offerings to customers using Travelport's universal API product</li>
+                    <li>Utilized IBM Websphere Message Broker, IBM WebSphere MQ Series, ESQL, JSON, XML, and SVN to create an asynchronous messaging application to get hotel content</li>
+                    <li>Implemented a documented IBM Flow pattern for WebSphere Message Broker to create an synchronous-to-asynchronous messaging application that maximized performance and message throughput</li>
+                </ul>
+            </p>
+        </li>
+    </ul>
+    <hr>
+    <h2>Education</h2>
+    <ul>
+        <li>M.S. Applied Computer Science, Northwest Missouri State University, Maryville MO (2009-2011)</li>
+        <li>B.S. Computer Science, Northwest Missouri State University, Maryville MO (1992-1996)</li>
+    </ul>
+    <hr>
+    <p>
+        <a href="./public/contact.html">Contact Me</a>
+    </p>
+    <footer>© LeRoy Hall. All Rights Reserved</footer>
+</body>
+</html>
